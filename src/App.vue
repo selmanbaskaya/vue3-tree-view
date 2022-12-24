@@ -3,7 +3,7 @@ import { ref } from "vue";
 import TreeView from "@/components/TreeView.vue";
 
 const root = ref({
-  label: "Level 1",
+  label: "Level 1 (root)",
   nodes: [
     {
       label: "Level 1.1",

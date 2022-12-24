@@ -12,7 +12,11 @@ const childVisibility = ref(false)
       class="label"
       @click="childVisibility = !childVisibility"
     >
-        {{ label }}
+        <font-awesome-icon
+          class="icon"
+          :icon="childVisibility ? 'fa-solid fa-minus' : 'fa-solid fa-plus'"
+        />
+        <span class="label-text">{{ label }}</span>
     </div>
     <div
       class="child"
@@ -30,6 +34,10 @@ const childVisibility = ref(false)
 .label {
     margin: 5px 10px;
     color: grey-5;
+}
+
+.label-text {
+    margin: 10px;
 }
 
 .child {
